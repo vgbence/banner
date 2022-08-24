@@ -1,0 +1,215 @@
+/* white shade turning OFF */
+.white-fade {
+    height: 250px;
+    width: 300px;
+    animation: white-fadeout 2s;
+}
+
+    @keyframes white-fadeout {
+        from { background-color: white; }
+        to   { background-color: #ffffff;
+        opacity: .4; }
+    }
+
+/* OPEL header ON */
+.text-first-header {
+    opacity: 0;
+    animation: 1.5s fade-in 2s forwards;
+}
+
+    @keyframes fade-in {
+        to { opacity: 1; }
+    }
+
+    @keyframes fade-back {
+        to { opacity: 1; }
+    }
+
+
+/* first message slides from right ON */
+.text-first-message{  
+    width: 100%;
+    overflow: hidden;
+    margin-right: 100px;
+    max-width: 300px;
+}
+
+.text-first-message p {
+    animation: .5s slide-left 3s forwards;
+    transform:translateX(100%);
+}
+  
+    @keyframes slide-left {
+        to { transform:translateX(0px); }
+    }
+
+/* car appears ON */
+.opel-car {
+    margin-right: 100px;
+    overflow: hidden;
+    width: 0;
+    animation: .75s car-in 6s forwards;
+    transform:translateX(200px);
+}
+
+    @keyframes car-in {
+        to {
+            width: 90%;
+            transform:translateX(25px);
+        }
+    }   
+
+/* OPEL header and first message OFF */
+.text-first {
+    opacity: 1;
+    animation: 2s fadeout 5s forwards;
+}
+
+@keyframes fadeout {
+    to { opacity: 0; }
+}
+
+/* second message slides in and in 3s disappears*/
+.text-second {  
+    width: 10%;
+    overflow: hidden;
+    margin-right: 100px;
+    max-width: 300px;
+}
+
+.text-second p {
+    opacity: 0;
+    animation: .5s slide-left-second 6s forwards;
+    transform: translateX(150%);
+}
+    @keyframes slide-left-second {
+        to { transform:translateX(0px); 
+        opacity: 1}
+    }
+
+.text-second {
+    animation: .5s slide-left-second-off 9s forwards;
+}
+
+    @keyframes slide-left-second-off {
+        to { opacity: 0; }
+    }
+
+/* third message slides in and in 3s disappears*/
+.text-third {  
+    width: 10%;
+    overflow: hidden;
+    margin-right: 100px;
+    max-width: 300px;
+}
+
+.text-third p {
+    opacity: 0;
+    animation: .5s slide-left-third 10.5s forwards;
+    transform: translateX(150%);
+}
+    @keyframes slide-left-third {
+        to { transform:translateX(0px); 
+        opacity: 1}
+    }
+
+.text-third {
+    animation: .5s slide-left-third-off 13s forwards;
+}
+
+    @keyframes slide-left-third-off {
+        to { opacity: 0; }
+    }
+
+/* fourth message slides in and in 3s disappears*/
+.text-fourth {  
+    width: 10%;
+    overflow: hidden;
+    margin-right: 100px;
+    max-width: 300px;
+}
+
+.text-fourth p {
+    opacity: 0;
+    animation: .5s slide-left-fourth 13.5s forwards;
+    transform: translateX(150%);
+}
+    @keyframes slide-left-fourth {
+        to { transform:translateX(0px); 
+        opacity: 1}
+    }
+
+.text-fourth {
+    animation: .5s slide-left-fourth-off 16.5s forwards;
+}
+
+    @keyframes slide-left-fourth-off {
+        to { opacity: 0; }
+    }
+
+/* car disappears */
+.opel-car-off {
+    animation: .5s car-out 16.5s forwards;
+    }
+        @keyframes car-out {
+            to { opacity: 0;}
+        } 
+
+/* OPEL header BACK */        
+.text-first-header-back {
+    opacity: 0;
+    animation: 1.5s fade-in 17s forwards;
+}
+
+    @keyframes fade-in {
+        to { opacity: 1; }
+    }
+
+    @keyframes fade-back {
+        to { opacity: 1; }
+    }
+
+
+/* first message slides from right BACK */
+.text-first-message-back {  
+    width: 100%;
+    overflow: hidden;
+    margin-right: 100px;
+    max-width: 300px;
+}
+
+.text-first-message-back p {
+    animation: .5s slide-left 18s forwards;
+    transform:translateX(100%);
+}
+  
+    @keyframes slide-left {
+        to { transform:translateX(0px); }
+    }
+
+/* black call to action button ON */
+.btn-black {
+    opacity: 0;
+    animation: 1.5s nudge 18.5s forwards;
+}
+  
+    @keyframes nudge {
+        0%  {  opacity: 1; 
+        }
+        20% {
+            transform: translateX(0);
+        }
+        40% {
+            transform: translateX(10px); 
+        }
+        60% {
+            transform: translateX(0);
+        }
+        80% {
+            transform: translateX(10px); 
+        }
+        100% {
+            opacity: 1; 
+            transform: translateX(0px);
+        }
+    }
