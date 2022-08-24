@@ -50,11 +50,12 @@ body {
 }
 
 .btn-black {
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: bold;
     position: absolute;
     bottom: 15px;
     left: 10px;
-    border: none;
-    color: white;
-    background-color: black;
     padding: .5rem .75rem;
 }
